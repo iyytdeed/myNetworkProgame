@@ -60,6 +60,7 @@ int main(int argc, char **argv)
     }
    
     // init for epoll paras
+	// epfd = epoll_create(int size);
     epfd = epoll_create1(0); // flags - 0
     bzero(&event, sizeof(epoll_event));
     event.events = EPOLLIN;
